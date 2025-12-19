@@ -81,7 +81,7 @@ To address class imbalance and maximize detection accuracy, the following strate
 
 * `62FIT4ATI_Group24_Topic2.ipynb`: Documented Jupyter notebook.
 * `pump_lstm_model_final.h5`: The final trained model file.
-* `Prọect Report.docx`: Comprehensive analysis and result documentation.
+* `Project Report.docx`: Comprehensive analysis and result documentation.
 * `README.md`: This setup and reproduction guide.
 
 ---
@@ -115,4 +115,5 @@ pip install tensorflow pandas numpy scikit-learn matplotlib seaborn
 * **Nguyễn Tuấn Anh** - 2201140006
 * **Nguyễn Quang Thiện** - 2201140090
 * **Đặng Văn Minh** - 2201140052
+
 
