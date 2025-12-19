@@ -8,7 +8,7 @@
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 This project utilizes **Deep Learning** to analyze sensor data from industrial pumps. The goal is to detect potential failures before they occur by classifying the machine's status based on readings from **52 different sensors**.
 
@@ -25,7 +25,7 @@ The model classifies machine status into three distinct categories:
 
 ---
 
-## 📊 Dataset Specifications
+## Dataset Specifications
 
 * **Total Samples:** 220,320 time-series entries.
 * **Features:** 52 continuous sensor measurements.
@@ -40,7 +40,7 @@ The model classifies machine status into three distinct categories:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Category | Tools |
 | --- | --- |
@@ -51,7 +51,7 @@ The model classifies machine status into three distinct categories:
 
 ---
 
-## 🏗 Model Architecture
+## Model Architecture
 
 We implemented a **Long Short-Term Memory (LSTM)** network, specifically chosen for its ability to capture long-term dependencies in time-series data.
 
@@ -66,7 +66,7 @@ We implemented a **Long Short-Term Memory (LSTM)** network, specifically chosen 
 
 ---
 
-## 🚀 Optimization Techniques
+## Optimization Techniques
 
 To address class imbalance and maximize detection accuracy, the following strategies were implemented:
 
@@ -77,7 +77,7 @@ To address class imbalance and maximize detection accuracy, the following strate
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 * `62FIT4ATI_Group24_Topic2.ipynb`: Documented Jupyter notebook.
 * `pump_lstm_model_final.h5`: The final trained model file.
@@ -86,7 +86,7 @@ To address class imbalance and maximize detection accuracy, the following strate
 
 ---
 
-## 💻 How to Run
+## How to Run
 
 ### 1. Install Prerequisites
 
@@ -103,17 +103,18 @@ pip install tensorflow pandas numpy scikit-learn matplotlib seaborn
 
 ---
 
-## 📈 Results
+## Results
 
 * **Overall Accuracy:** ~89%
 * **Key Achievement:** Successfully detected the **single BROKEN instance** in the test set by leveraging the Dynamic Thresholding technique.
 
 ---
 
-## 👥 Contributors (Group 24)
+## Contributors (Group 24)
 
 * **Nguyễn Tuấn Anh** - 2201140006
 * **Nguyễn Quang Thiện** - 2201140090
 * **Đặng Văn Minh** - 2201140052
+
 
 
