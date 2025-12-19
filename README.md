@@ -35,13 +35,13 @@ We implemented a Long Short-Term Memory (LSTM) network, which is effective for t
 
 5. Optimization Techniques
 To meet the project requirements of researching and applying optimization techniques, we implemented the following strategies to handle the Class Imbalance and improve performance:
-1. Computed Class Weights (Boosted):
+* Computed Class Weights (Boosted):
 We calculated class weights to handle imbalance. Specifically, the weight for the BROKEN class (Class 0) was boosted by a factor of 5.0 to force the model to pay more attention to rare failure events .
-2. Focal Loss Function:
+* Focal Loss Function:
 Instead of standard Categorical Crossentropy, we implemented a custom Focal Loss (gamma=2.0, alpha=0.25). This loss function down-weights easy examples and focuses training on hard negatives, improving detection of rare classes .
-3. Dynamic Thresholding (Post-processing):
+* Dynamic Thresholding (Post-processing):
 Standard argmax often misses rare classes. We implemented an automatic probability analysis to set a Dynamic Threshold (approximately 0.0037). Any sample with a BROKEN probability exceeding this threshold is flagged as critical .
-4. Early Stopping:
+* Early Stopping:
 We used Early Stopping monitoring val_loss to prevent overfitting during training .
 
 6. Project Structure
@@ -57,9 +57,9 @@ Ensure you have the following libraries installed:
 pip install tensorflow pandas numpy scikit-learn matplotlib seaborn
 
 Execution Steps
-1. Download the Dataset: Download sensor.csv from the provided link.
-2. Mount Drive (if using Colab): The notebook assumes the dataset is located at /content/drive/MyDrive/Dataset/sensor.csv. Adjust the file_path variable in the "2. Lấy Datasets" section if your path differs .
-3. Run the Notebook: Open the .ipynb file and run all cells sequentially. The notebook includes data loading, preprocessing, model training with Focal Loss, and evaluation .
+* Download the Dataset: Download sensor.csv from the provided link.
+* Mount Drive (if using Colab): The notebook assumes the dataset is located at /content/drive/MyDrive/Dataset/sensor.csv. Adjust the file_path variable in the "2. Lấy Datasets" section if your path differs .
+* Run the Notebook: Open the .ipynb file and run all cells sequentially. The notebook includes data loading, preprocessing, model training with Focal Loss, and evaluation .
 
 8. Results
 * Overall Accuracy: Approximately 89% .
